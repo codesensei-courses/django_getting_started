@@ -9,5 +9,7 @@
     {{meeting.start_time}} in <strong>{{meeting.room}}</strong>.
 </p>
 
+<a href="{% url 'edit' meeting.id %}">Change this meeting</a> <br>
+<a href="{% url 'delete' meeting.id %}">Delete this meeting</a> <br>
 <a href="{% url 'welcome' %}">Home</a>
 {% endblock %}
