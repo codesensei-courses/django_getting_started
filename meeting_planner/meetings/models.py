@@ -3,9 +3,6 @@ from datetime import time
 from django.db import models
 
 
-# Please add a Model class called Room
-# To represent a meeting room
-# A room has a name, a floor number, and a room number
 class Room(models.Model):
     name = models.CharField(max_length=50)
     floor = models.IntegerField()
